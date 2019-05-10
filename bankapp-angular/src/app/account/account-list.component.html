@@ -1,0 +1,20 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Account Holder Name</th>
+        <th scope="col">Balance</th>
+        <th scope="col">Account type</th>
+  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let acc of accounts">
+        <td>{{acc.accountNumber}}</td>
+        <td>{{acc.accountHolderName}}</td>
+        <td>{{acc.accountBalance}}</td>
+        <td>{{acc.accountType}}</td>
+  
+      </tr>
+    </tbody>
+  </table>
